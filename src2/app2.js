@@ -1,4 +1,4 @@
-require("dotenv").config({ path: "../.env" });
+
 const express = require("express");
 const app = express(); ///to use all property of express
 const Contactt = require("./model/contcatmodel.js");
