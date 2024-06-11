@@ -35,10 +35,12 @@ const corsOption = {
 
 app.use(cors(corsOption));
 
-app.use(express.static("../speech/build"));
+if(process.env.NODE_ENV== "production"){
+  app.use(express.static("../speech/build"));
 app.get("*", () => {
   res.sendFile(path.join(__dirname, "..", "speech", "build", "index.html"));
 });
+}
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
