@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src2/app2.js -e js,hbs",
-    "build": " npm install --prefix speech && npm run build --prefix speech"
+    "start": "node src2/app2.js ",
+    "build": " npm install  && npm run build --prefix speech"
   },
   "keywords": [],
   "author": "",
