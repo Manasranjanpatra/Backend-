@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src2/app2.js -e js,hbs",
-    "build": "NPM_CONFIG_PRODUCTION-false npm install --prefix speech 86 npm run build --prefix speech"
+    "build": " npm install --prefix speech && npm run build --prefix speech"
   },
   "keywords": [],
   "author": "",
