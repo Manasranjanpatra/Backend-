@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src2/app2.js ",
-    "build":  "npm install && npm install --prefix speech && npm run build --prefix speech"
+    "build":  "npm install && cd speech && npm install --prefix speech && npm run build --prefix speech"
    
   },
   "keywords": [],
